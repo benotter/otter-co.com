@@ -1,15 +1,19 @@
 .TopBar {
+    display: block;
+    height: 80px;
+
+    box-sizing: content-box;
     text-align: center;
+    flex: initial;
 }
 
 .TopBar-Header {
-    background-color: rgb(78, 78, 78);
-    height: 70px;
+    height: calc(100% - 20px);
     padding: 10px;
-    color: white;
 }
 
 .TopBar .OCIcon {
+    height: 100%;
     float: left;
     clear: both;
 }

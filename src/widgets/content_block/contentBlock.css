@@ -1,0 +1,6 @@
+.ContentBlock {
+    flex: 1;
+
+    display: inline-flex;
+    flex-direction: row;
+}

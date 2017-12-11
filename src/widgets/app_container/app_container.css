@@ -1,0 +1,6 @@
+.AppContainer {
+    display: block;
+    padding: 20px;
+    
+    flex: auto;
+}

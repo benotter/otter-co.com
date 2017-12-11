@@ -6,12 +6,16 @@ import OCIcon from '../oc_icon/ocicon';
 
 export default class TopBar extends Component 
 {
+    constructor(props)
+    {
+        super(props);
+    }
     render()
     {
         return (
             <div className="TopBar">
                 <header className="TopBar-Header">
-                    <OCIcon className="OCIcon" glow={true} clickable={true}></OCIcon>
+                    {this.props.children}
                 </header>
             </div>
         );

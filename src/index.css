@@ -1,8 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+
   font-family: sans-serif;
   height: 100%;
 
   background: #1b1b1b
+}
+
+#root {
+  height: 100%;
 }
