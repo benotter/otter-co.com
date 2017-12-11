@@ -1,10 +1,15 @@
 .TopBar {
-    text-align: left;
+    text-align: center;
 }
 
 .TopBar-Header {
     background-color: rgb(78, 78, 78);
-    height: 50px;
-    padding: 20px;
+    height: 70px;
+    padding: 10px;
     color: white;
+}
+
+.TopBar .OCIcon {
+    float: left;
+    clear: both;
 }

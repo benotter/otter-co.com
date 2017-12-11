@@ -7,16 +7,19 @@ import './ocicon.css';
 
 export default class OCIcon extends Component 
 {
-    props = {
-        glow : false,
-        clickable : false,
-    };
-
     constructor(props)
     {
         super(props);
         this.props = props;
     }
+
+    props = {
+        glow : false,
+        clickable : false,
+    };
+
+    componentDidMount(){}
+    componentWillUnmount(){}
 
     render() 
     {

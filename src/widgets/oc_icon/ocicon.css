@@ -1,16 +1,20 @@
 .OCIcon {
     position: relative;
-    height: inherit;
-}
 
-.OCIcon img {
-    position: absolute;
+    display: inline-block;
     height: inherit;
-    max-height: 80px;
+    box-sizing: border-box;
 }
 
 .OCIconClickable {
     cursor: pointer;
+}
+
+.OCIcon img {
+    position: absolute;
+
+    height: inherit;
+    max-height: 80px;
 }
 
 .OCIcon .OCIconLight {

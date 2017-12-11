@@ -11,7 +11,7 @@ export default class TopBar extends Component
         return (
             <div className="TopBar">
                 <header className="TopBar-Header">
-                    <OCIcon glow={true} clickable={true}> </OCIcon>
+                    <OCIcon className="OCIcon" glow={true} clickable={true}></OCIcon>
                 </header>
             </div>
         );

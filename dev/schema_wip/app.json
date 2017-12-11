@@ -1,0 +1,22 @@
+{
+    "name": "Example App Schema",
+    "appInfo": {
+        "author": "Otter-Co",
+        "description": "Otter-Co's Example App, For Exampling!",
+        "quickDescription": "Otter-Co's Example App"
+    },
+    "type": "appType",
+    "source": "remote | local",
+    "mode": "test | demo | real",
+
+    "panels": [
+        {
+            "name": "Example Panel",
+            "toolTip": "",
+            "type": "basic",
+            "interfaces": [
+
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+.AppList {
+    overflow: scroll;
+    overflow-x: hidden;
+}
