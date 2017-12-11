@@ -1,0 +1,10 @@
+.TopBar {
+    text-align: left;
+}
+
+.TopBar-Header {
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+    padding: 20px;
+    color: white;
+}

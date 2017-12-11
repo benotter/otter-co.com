@@ -1,0 +1,21 @@
+{
+  "name": "otter-co.com",
+  "version": "0.1.0",
+  "description": "Otter-Co HomePage!",
+  "author": "Ben Otter <benotter@me.com>",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^8.0.57",
+    "@types/react": "^16.0.28",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

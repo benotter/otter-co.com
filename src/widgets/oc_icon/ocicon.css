@@ -1,0 +1,25 @@
+.OCIcon {
+    position: relative;
+    height: inherit;
+}
+
+.OCIcon img {
+    position: absolute;
+    height: inherit;
+    max-height: 80px;
+}
+
+.OCIconClickable {
+    cursor: pointer;
+}
+
+.OCIcon .OCIconLight {
+    opacity: 0.1;
+
+    transition: all 0.5s;
+}
+
+.OCIconGlow:hover .OCIconLight {
+    opacity: 1.0;
+    filter: blur(5px);
+}
