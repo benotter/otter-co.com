@@ -14,16 +14,12 @@
     transition: width 0.5s, opacity 0.5s, min-width 0.5s, max-width 0.5s;
 }
 
-.AppListOpen {
+.AppList.AppListOpen {
     min-width: 200px;
     max-width: 200px;
 }
 
-.AppList-Cont {
-
-}
-
-.AppList-App {
+.AppList .AppList-App {
     vertical-align: middle;
     margin: 5px;
     white-space: nowrap;
@@ -36,15 +32,15 @@
     overflow: hidden;
 }
 
-.AppList-App:hover {
+.AppList .AppList-App:hover {
     background: #757575;
 }
 
-.AppList-Selected {
+.AppList .AppList-App.AppList-Selected {
     background: #808080;
 }
 
-.AppList-AppIcon {
+.AppList .AppList-App .AppList-AppIcon {
     display: inline-block;
 
     vertical-align: middle;
@@ -52,10 +48,16 @@
     width: 50px;
     height: 50px;
 
+    transition: background 0.5s;
+
     background: blue;
 }
 
-.AppList-AppName {
+.AppList .AppList-App:hover .AppList-AppIcon {
+    background: lightblue;
+}
+
+.AppList .AppList-App .AppList-AppName {
     display: inline-block;
 
     margin: 7px;
@@ -67,8 +69,7 @@
     opacity: 1;
 }
 
-.AppListClosed .AppList-AppName {
+.AppList .AppList-App.AppListClosed .AppList-AppName {
     opacity: 0;
     width: 0;
-    max-width: 0;
 }

@@ -13,49 +13,59 @@ import './app.css';
 
 let alreadySet = false;
 
-class App extends Component {
-	constructor(props) {
-		super(props);
+class App extends Component
+{
+	constructor ( props )
+	{
+		super( props );
 
 		this.state = {
 			subApps: [],
 		};
 	}
 
-	componentWillMount()
+	componentWillMount ()
 	{
-		if(!alreadySet)
+		if ( !alreadySet )
 		{
-			this.setState({subApps});
+			this.setState( { subApps } );
 			alreadySet = false;
 		}
-			
-	}
-	componentDidMount() {}
-	componentWillUnmount() {}
 
-	render() {
+	}
+	componentDidMount () { }
+	componentWillUnmount () { }
+
+	render ()
+	{
 		return (
 			<div className="App">
 				<TopBar>
 
-					<OCIcon 
-						glow={true} 
-						clickable={true} 
-						whenClick={ ()=>{ this.toggleAppList(); }}>
+					<OCIcon
+						glow={ true }
+						clickable={ true }
+						whenClick={ () => { this.toggleAppList(); } }
+					>
+
 					</OCIcon>
 
 				</TopBar>
 
 				<ContentBlock>
 
-					<AppList 
-						ref={ (ref)=>{ this.appList = ref; }}
-						appSetter={ (app)=>{ this.setCurrentApp(app); }}
-						apps={this.state.subApps}>
+					<AppList
+						ref={ ( ref ) => { this.appList = ref; } }
+						appSetter={ ( app ) => { this.setCurrentApp( app ); } }
+						apps={ this.state.subApps } 
+					>
+
 					</AppList>
 
-					<AppContainer ref={ (ref)=>{ this.appCont = ref; } }>
+					<AppContainer 
+						ref={ ( ref ) => { this.appCont = ref; } }
+					>
+					
 					</AppContainer>
 
 				</ContentBlock>
@@ -63,14 +73,14 @@ class App extends Component {
 		);
 	}
 
-	toggleAppList() 
+	toggleAppList ()
 	{
 		this.appList.toggleOpen();
 	}
 
-	setCurrentApp(app)
+	setCurrentApp ( app )
 	{
-		this.appCont.setCurrentApp(app);
+		this.appCont.setCurrentApp( app );
 	}
 
 }

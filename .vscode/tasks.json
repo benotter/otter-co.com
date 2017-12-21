@@ -4,12 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Start React Server",
             "type": "npm",
-            "script": "build-watch-ts",
-            "problemMatcher": [
-                "$tsc-watch"
-            ],
-            "isBackground": true
+            "script": "start"
         }
     ]
 }

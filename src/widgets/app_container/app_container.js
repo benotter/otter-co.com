@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import './app_container.css';
 
 export default class AppContainer extends Component 
 {
-    constructor(props)
+    constructor ( props )
     {
-        super(props);
+        super( props );
 
         this.state = {
             currentApp: null,
@@ -15,17 +15,17 @@ export default class AppContainer extends Component
         this.props = props;
     }
 
-    setCurrentApp(app)
+    setCurrentApp ( app )
     {
-        this.setState( {currentApp: app} );
+        this.setState( { currentApp: app } );
     }
 
-    render()
+    render ()
     {
         return (
-        <div className="AppContainer">
+            <div className="AppContainer">
 
-        </div>
+            </div>
         );
     }
 }
